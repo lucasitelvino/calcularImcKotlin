@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/peso"
+        style="@style/dimensao"
+        android:inputType="numberDecimal"
+        android:hint="Informe o peso em Kg"/>
+
+    <EditText
+        android:id="@+id/altura"
+        style="@style/dimensao"
+        android:inputType="numberDecimal"
+        android:hint="Informe a altura em metros"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center_horizontal"
+        android:background="#2A87E4"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:onClick="calcular"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="IMC calculado"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#1E6821"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F8FE1"
+        android:gravity="center"
+        android:text="0.00"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+</LinearLayout>
